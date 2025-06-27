@@ -6,13 +6,12 @@
 		"url": "https://mari.software"
 	},
 	"keywords": [
-		"SvelteKit",
-		"DaisyUI",
-		"Starter",
-		"Template"
+		"mari.software",
+		"admin",
+		"dashboard"
 	],
 	"license": "GPL-3.0-only",
-	"version": "0.1.4",
+	"version": "0.1.1",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -27,9 +26,12 @@
 		"test:unit": "vitest",
 		"test": "pnpm run test:unit -- --run && pnpm run test:e2e",
 		"test:e2e": "playwright test",
-		"changeset": "changeset",
 		"changeset:add": "changeset add",
-		"changeset:version": "changeset version"
+		"changeset:version": "changeset version",
+		"tauri:dev": "tauri dev",
+		"tauri:build": "tauri build",
+		"sync:v": "node scripts/sync-versions.cjs",
+		"release:json": "node scripts/release-json.cjs"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.4",
@@ -67,5 +69,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@tauri-apps/plugin-updater": "~2.9.0"
 	}
 }
