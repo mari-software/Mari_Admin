@@ -1,0 +1,71 @@
+{
+	"name": "starter-sveltekit-template",
+	"private": true,
+	"author": {
+		"name": "mari.software",
+		"url": "https://mari.software"
+	},
+	"keywords": [
+		"SvelteKit",
+		"DaisyUI",
+		"Starter",
+		"Template"
+	],
+	"license": "GPL-3.0-only",
+	"version": "0.1.4",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"app": "vite dev --host",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint .",
+		"test:unit": "vitest",
+		"test": "pnpm run test:unit -- --run && pnpm run test:e2e",
+		"test:e2e": "playwright test",
+		"changeset": "changeset",
+		"changeset:add": "changeset add",
+		"changeset:version": "changeset version"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.29.4",
+		"@eslint/compat": "^1.2.5",
+		"@eslint/js": "^9.18.0",
+		"@lucide/svelte": "^0.513.0",
+		"@playwright/test": "^1.49.1",
+		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@tailwindcss/forms": "^0.5.9",
+		"@tailwindcss/typography": "^0.5.15",
+		"@tailwindcss/vite": "^4.0.0",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/svelte": "^5.2.4",
+		"daisyui": "^5.0.43",
+		"eslint": "^9.18.0",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-plugin-svelte": "^3.0.0",
+		"globals": "^16.0.0",
+		"init": "^0.1.2",
+		"jsdom": "^26.0.0",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"tailwindcss": "^4.0.0",
+		"typescript": "^5.0.0",
+		"typescript-eslint": "^8.20.0",
+		"vite": "^6.2.6",
+		"vitest": "^3.0.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	}
+}

@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@plugin "daisyui" {
+	themes: all;
+	include:;
+	exclude:;
+	prefix: 'd-';
+	logs: false;
+}
+
+/* Import Css From lib asset here */
+@import "./lib/asset/style/font.style.css"; 
+
+body {
+	margin: 5rem;
+}
