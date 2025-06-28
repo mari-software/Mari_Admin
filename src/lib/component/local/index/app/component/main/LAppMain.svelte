@@ -4,8 +4,10 @@
 	import { MariAdminAppRoute } from '$lib/model/data/route.data';
 </script>
 
-<main class="m-main p-3">
-	<section class="apps grid grid-cols-3 gap-5 lg:grid-cols-4">
+<main class="m-main p-3 px-8 md:px-10 lg:px-12">
+	<section
+		class="apps grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+	>
 		{#each MariAdminAppRoute as route}
 			<DaisyUiLink className="" href={route.url}>
 				<DaisyUiCard className="text-center py-10 hover:bg-accent">

@@ -1,5 +1,11 @@
 # starter-sveltekit-template
 
+## 0.1.3
+
+### Patch Changes
+
+- Added Breadcrumbs
+
 ## 0.1.2
 
 ### Patch Changes
