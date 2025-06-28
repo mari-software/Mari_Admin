@@ -1,0 +1,22 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.m-app {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.m-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+}
