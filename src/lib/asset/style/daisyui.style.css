@@ -1,0 +1,12 @@
+@utility d-card {
+    @apply hover:-translate-y-1 transition duration-300 ease-in-out;
+}
+
+@utility d-btn {
+  @apply hover:-translate-y-0.5 transition duration-200 ease-in-out;
+}
+
+@utility d-link {
+  @apply hover:d-link-accent;
+  @apply hover:-translate-y-0.5 transition duration-200 ease-in-out;
+}

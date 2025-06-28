@@ -1,7 +1,19 @@
 <script lang="ts">
+	import GIndexBreadCrumb from '$lib/component/global/index/component/GIndexBreadCrumb.svelte';
+	import GIndexToolBar from '$lib/component/global/index/component/GIndexToolBar.svelte';
 	import '../app.css';
 
 	let { children } = $props();
 </script>
 
-{@render children()}
+<section class="m-app">
+	<section class="toolbar">
+		<GIndexToolBar />
+	</section>
+	<section class="breadcrumb">
+		<GIndexBreadCrumb />
+	</section>
+	<main class="m-main">
+		{@render children()}
+	</main>
+</section>

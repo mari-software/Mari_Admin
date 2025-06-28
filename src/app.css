@@ -9,9 +9,7 @@
 	logs: false;
 }
 
-/* Import Css From lib asset here */
+/* Import CSS From lib asset here */
+@import "./lib/asset/style/app-layout.style.css"; 
 @import "./lib/asset/style/font.style.css"; 
-
-body {
-	margin: 5rem;
-}
+@import "./lib/asset/style/daisyui.style.css"; 
