@@ -19,7 +19,7 @@
 		minimizeWindow
 	} from '$lib/util/tauri/window_controller.tauri.util';
 	import { goToRoute } from '$lib/util/sveltekit/router.sveltekit.util';
-	import { IndexToolbarMenu } from '$lib/model/data/route.data';
+	import { MariAdminMenuAppRoute } from '$lib/model/data/route.data';
 
 	let appVersion: string = $state('Loading app version...');
 
@@ -35,7 +35,7 @@
 				<LucideMenu />
 			</DaisyUiDropdownButton>
 			<DaisyUiDropdownContent className="my-2 gap-2">
-				{#each IndexToolbarMenu as route}
+				{#each MariAdminMenuAppRoute as route}
 					<li>
 						<DaisyUiButton
 							className="d-btn-primary gap-5"

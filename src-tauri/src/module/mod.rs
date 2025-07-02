@@ -1,2 +1,9 @@
+pub mod database_connection;
+pub mod environment;
+pub mod http_request;
 pub mod information_provider;
+pub mod logging;
+pub mod path;
+pub mod socket_io;
+pub mod updater;
 pub mod window_controller;

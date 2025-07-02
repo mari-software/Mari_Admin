@@ -30,4 +30,3 @@ pub fn set_default_size_window<R: Runtime>(app: AppHandle<R>) -> Result<(), Stri
 
     Ok(())
 }
-
