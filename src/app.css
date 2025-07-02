@@ -10,6 +10,7 @@
 }
 
 /* Import CSS From lib asset here */
-@import "./lib/asset/style/app-layout.style.css"; 
-@import "./lib/asset/style/font.style.css"; 
-@import "./lib/asset/style/daisyui.style.css"; 
+@import './lib/asset/style/app-layout.style.css';
+@import './lib/asset/style/font.style.css';
+@import './lib/asset/style/daisyui.style.css';
+@import './lib/asset/style/css.style.css';

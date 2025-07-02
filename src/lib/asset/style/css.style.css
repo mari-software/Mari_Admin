@@ -1,0 +1,8 @@
+thead {
+	@apply duration-200 ease-in-out hover:-translate-y-[1px] hover:transition;
+}
+
+tr {
+	@apply hover:bg-base-300;
+	@apply duration-200 ease-in-out hover:-translate-y-[1px] hover:transition;
+}
