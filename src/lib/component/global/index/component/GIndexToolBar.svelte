@@ -12,19 +12,19 @@
 	import DaisyUiTooltip from '$lib/component/library/daisyui/tooltip/DaisyUiTooltip.svelte';
 	import LucideX from '$lib/component/library/lucide/LucideX.svelte';
 	import LucidePlus from '$lib/component/library/lucide/LucidePlus.svelte';
-	import { getAppVersion } from '$lib/util/tauri/information_provider.tauri.util';
+	import { getAppVersionTauri } from '$lib/util/tauri/module/information_provider.tauri.util';
+	import { goToRoute } from '$lib/util/sveltekit/router.sveltekit.util';
+	import { MariAdminMenuAppRoute } from '$lib/model/data/route.data';
 	import {
 		exitWindow,
 		maximizeWindow,
 		minimizeWindow
-	} from '$lib/util/tauri/window_controller.tauri.util';
-	import { goToRoute } from '$lib/util/sveltekit/router.sveltekit.util';
-	import { MariAdminMenuAppRoute } from '$lib/model/data/route.data';
+	} from '$lib/util/tauri/module/window_controller.tauri.util';
 
 	let appVersion: string = $state('Loading app version...');
 
 	onMount(async () => {
-		appVersion = await getAppVersion();
+		appVersion = await getAppVersionTauri();
 	});
 </script>
 
