@@ -20,5 +20,6 @@
 		<DaisyUiButton className="d-btn-primary" onClick={handleGoToHome}
 			>Go To Home</DaisyUiButton
 		>
+		
 	</div>
 </div>

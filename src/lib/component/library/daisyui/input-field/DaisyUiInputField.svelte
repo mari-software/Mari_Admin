@@ -6,7 +6,8 @@
 		inputTitle,
         className,
 		minLength,
-		maxlength
+		maxlength,
+		inputValue = $bindable(),
 	} = $props<{
 		inputPlaceholderText: string;
 		inputType: string;
@@ -15,6 +16,7 @@
 		inputTitle?: string;
 		minLength?: number;
 		maxlength?: number;
+		inputValue?: string;
 	}>();
 </script>
 	
@@ -26,6 +28,7 @@
 		minlength={minLength ?? 1}
 		maxlength={maxlength ?? 5}
 		title={inputTitle}
-        class={className}
+        class="d-input {className}"
+		bind:value={inputValue}
 	/>
 
