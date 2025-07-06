@@ -13,3 +13,7 @@ export function getCurrentRoutePathSegments(): string[] {
     const pathname = getCurrentFullRoute();
     return pathname.replace(/^\/|\/$/g, '').split('/').filter(segment => segment !== '');
 }
+
+export function goBackRoute() {
+    window.history.back();
+}

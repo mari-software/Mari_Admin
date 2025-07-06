@@ -11,9 +11,6 @@
 	<section class="toolbar">
 		<GIndexToolBar />
 	</section>
-	<section class="breadcrumb">
-		<GIndexBreadCrumb />
-	</section>
 	<main class="m-main">
 		{@render children()}
 	</main>
@@ -21,3 +18,5 @@
 		<GIndexFooter />
 	</section>
 </section>
+
+

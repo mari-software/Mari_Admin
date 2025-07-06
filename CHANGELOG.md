@@ -1,5 +1,11 @@
 # starter-sveltekit-template
 
+## 0.1.5
+
+### Patch Changes
+
+- Setting and Error page
+
 ## 0.1.4
 
 ### Patch Changes
