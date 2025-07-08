@@ -1,15 +1,16 @@
 <script lang="ts">
-  let { labelType, children, className, spanText } = $props<{
-      labelType: string;
-      children: () => void;
-      className?: string;
-      spanText: string;
+	let { className, forText, children } = $props<{
+		className?: string;
+		forText?: string;
 
-  }>();
-  
+		children?: () => void;
+	}>();
 </script>
 
-<label class="d-{labelType}">
-  <span class={className}>{spanText}</span>
- {@render children()}
-</label>
+{#if children}
+	<label for={forText} class={className}>
+		{@render children()}
+	</label>
+{:else}
+	<label for={forText} class={className}> </label>
+{/if}

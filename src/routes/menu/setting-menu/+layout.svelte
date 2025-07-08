@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DaisyUiTab from '$lib/component/library/daisyui/tab/DaisyUiTab.svelte';
+	import DaisyUiTab from '$lib/component/library/daisyui/tabs/DaisyUiTab.svelte';
 
 	let { children } = $props();
 </script>

@@ -1,15 +1,12 @@
 <script lang="ts">
-    let { children, className, optionHeader, onChange, selectedValue } = $props<{
+    let { children, className, optionHeader } = $props<{
         children?: () => void;
         className?: string;
         optionHeader?: string;
-        onChange?: (e: Event) => void;
-        selectedValue?: string;
-
     }>();
 </script>
 
-<select class="d-select {className}" value={selectedValue} onchange={onChange}>
+<select class="d-select {className}">
   <option disabled selected>{optionHeader}</option>
     {@render children()}
 </select>

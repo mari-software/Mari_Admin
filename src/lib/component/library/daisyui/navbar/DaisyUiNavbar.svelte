@@ -5,6 +5,6 @@
     }>();
 </script>
 
-<div class="d-navbar bg-base-200 shadow-md {className}" data-tauri-drag-region>
+<div class="d-navbar bg-base-200 shadow-md {className}">
   {@render children()}
 </div>

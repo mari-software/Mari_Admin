@@ -41,7 +41,7 @@
 							className="d-btn-primary gap-5"
 							onClick={() => goToRoute(route.url)}
 						>
-							<svelte:component this={route.icon} />
+							<route.icon />
 							{route.name}
 						</DaisyUiButton>
 					</li>

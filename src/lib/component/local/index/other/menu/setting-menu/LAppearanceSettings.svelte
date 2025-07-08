@@ -7,12 +7,11 @@
 	import DaisyUiCard from '$lib/component/library/daisyui/card/DaisyUiCard.svelte';
 	import DaisyUiSelect from '$lib/component/library/daisyui/select/DaisyUiSelect.svelte';
 
-	import DaisyUiInputField from '$lib/component/library/daisyui/input-field/DaisyUiInputField.svelte';
-
 	import DaisyUiButton from '$lib/component/library/daisyui/button/DaisyUiButton.svelte';
 	import DaisyUiDropdownButton from '$lib/component/library/daisyui/dropdown/button/DaisyUiDropdownButton.svelte';
 	import DaisyUiDropdownContent from '$lib/component/library/daisyui/dropdown/content/DaisyUiDropdownContent.svelte';
 	import DaisyUiDropdown from '$lib/component/library/daisyui/dropdown/DaisyUiDropdown.svelte';
+	import DaisyUiInputField from '$lib/component/library/daisyui/inputfield/DaisyUiInputField.svelte';
 
 	const themes = $state([
 		'light',
@@ -95,7 +94,9 @@
 				Theme
 				<LucideDropDown />
 			</DaisyUiDropdownButton>
-			<DaisyUiDropdownContent className="bg-base-300 rounded-box z-1 w-52 p-2 shadow-2xl">
+			<DaisyUiDropdownContent
+				className="bg-base-300 rounded-box z-1 w-52 p-2 shadow-2xl"
+			>
 				{#each themes.slice(0, 3) as theme}
 					<li>
 						<input
@@ -110,7 +111,7 @@
 				{/each}
 			</DaisyUiDropdownContent>
 		</DaisyUiDropdown>
-			<!-- <div class="d-dropdown mb-30">
+		<!-- <div class="d-dropdown mb-30">
 				<div tabindex="0" role="button" class="d-btn m-1">
 					Theme
 					<LucideDropDown />
@@ -132,39 +133,38 @@
 							{/each}
 							</ul>
 							</div> -->
-							<div>
-								Try other themes:
-								<DaisyUiInputField
-								inputType="text"
-								inputPlaceholderText="Enter a theme"
-								maxlength={10}
-								className="d-input-bordered theme-controller"
-								bind:inputValue={currentTheme}
-								/>
-								
-								{#if currentTheme.trim() && filteredThemes.length > 0}
-								<ul
-								class="bg-base-200 rounded-box z-99 mt-1 max-h-50 overflow-y-auto shadow"
-								>
-								{#each filteredThemes as suggestion}
-								<li>
-									<DaisyUiButton
-									onClick={() => (currentTheme = suggestion)}
-									className="w-full justify-start"
-									>
-									{suggestion}
-								</DaisyUiButton>
-								<!-- <button
+		<div>
+			Try other themes:
+			<DaisyUiInputField
+				inputType="text"
+				inputPlaceholderText="Enter a theme"
+				maxlength={10}
+				className="d-input-bordered theme-controller"
+			/>
+
+			{#if currentTheme.trim() && filteredThemes.length > 0}
+				<ul
+					class="bg-base-200 rounded-box z-99 mt-1 max-h-50 overflow-y-auto shadow"
+				>
+					{#each filteredThemes as suggestion}
+						<li>
+							<DaisyUiButton
+								onClick={() => (currentTheme = suggestion)}
+								className="w-full justify-start"
+							>
+								{suggestion}
+							</DaisyUiButton>
+							<!-- <button
 								class="hover:bg-base-300 cursor-pointer px-4 py-2"
 								onclick={() => (currentTheme = suggestion)}
 								>
 								{suggestion}
 								</button> -->
-							</li>
-							{/each}
-						</ul>
-						{/if}
-					</div>
+						</li>
+					{/each}
+				</ul>
+			{/if}
+		</div>
 	</div>
 	<DaisyUiDivider
 		position="horizontal"
@@ -182,7 +182,7 @@
 		>
 			<option value="AdwaitaSans">Adwaita Sans</option>
 			<option value="Arvo">Arvo</option>
-			<option value="AdwaitaMono">Adwaita Mono</option>
+			<option value="ProtoNerd">ProtoNerd</option>
 		</DaisyUiSelect>
 
 		<!-- <select class="d-select d-select-ghost" value={selectedFont} onchange={handleFontChange}>

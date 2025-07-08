@@ -3,6 +3,5 @@ thead {
 }
 
 tr {
-	@apply hover:bg-base-300;
-	@apply duration-200 ease-in-out hover:-translate-y-[1px] hover:transition;
+	@apply hover:bg-base-300 duration-200 ease-in-out hover:-translate-y-[1px] hover:transition;
 }

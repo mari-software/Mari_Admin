@@ -1,10 +1,10 @@
 <script lang="ts">
 	let { children, className } = $props<{
-		children: () => void;
 		className?: string;
+		children: () => void;
 	}>();
 </script>
 
-<div class="d-tabs {className}">
+<div class="d-mockup-code {className}">
 	{@render children()}
 </div>

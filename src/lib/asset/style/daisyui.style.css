@@ -7,6 +7,13 @@
 }
 
 @utility d-link {
-	@apply hover:d-link-accent;
-	@apply transition duration-200 ease-in-out hover:-translate-y-0.5;
+	@apply hover:d-link-accent transition duration-200 ease-in-out hover:-translate-y-0.5;
+}
+
+@utility d-input {
+	@apply focus:border-transparent focus:ring-0 focus:outline-none;
+}
+
+@utility d-badge {
+	@apply rounded-full;
 }
