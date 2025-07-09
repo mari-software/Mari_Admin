@@ -178,7 +178,7 @@
 			className="d-select-ghost"
 			optionHeader="Pick a font"
 			onChange={handleFontChange}
-			selectedValue={selectedFont}
+			
 		>
 			<option value="AdwaitaSans">Adwaita Sans</option>
 			<option value="Arvo">Arvo</option>
