@@ -1,9 +1,10 @@
 <script lang="ts">
-	import DaisyUiTab from '$lib/component/library/daisyui/tabs/DaisyUiTab.svelte';
+	import DaisyUiTabs from '$lib/component/library/daisyui/tabs/DaisyUiTabs.svelte';
+
 
 	let { children } = $props();
 </script>
 
-<DaisyUiTab className="d-tabs-lift">
+<DaisyUiTabs className="d-tabs-lift">
 	{@render children()}
-</DaisyUiTab>
+</DaisyUiTabs>

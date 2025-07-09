@@ -11,7 +11,8 @@
 		nameText,
 		value,
 		ariaLabel,
-		rawStyle
+		rawStyle,
+		checked
 	} = $props<{
 		id?: string;
 		className?: string;
@@ -25,6 +26,7 @@
 		value?: string;
 		ariaLabel?: string;
 		rawStyle?: boolean;
+		checked?: boolean;
 	}>();
 </script>
 
@@ -42,6 +44,7 @@
 		name={nameText}
 		{value}
 		aria-label={ariaLabel}
+		{checked}
 	/>
 {:else}
 	<input
