@@ -1,4 +1,4 @@
-import type { ThemeInterface } from "../interface/theme.interface";
+/* import type { ThemeInterface } from "../interface/theme.interface";
 
 export const MariAdminAppTheme: ThemeInterface[] = [
 	{ theme: 'light' },
@@ -37,3 +37,4 @@ export const MariAdminAppTheme: ThemeInterface[] = [
 	{ theme: 'abyss' },
 	{ theme: 'silk' }
 ];
+ */
