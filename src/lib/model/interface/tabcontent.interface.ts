@@ -2,7 +2,7 @@ import type { Component } from "svelte";
 
 export interface TabContentInterface {
     component: Component,
-    arialLabel: string,
+    ariaLabel: string,
     tabName: string
     icon?: Component
 }
