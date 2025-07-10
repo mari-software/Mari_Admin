@@ -5,10 +5,10 @@
 </script>
 
 
-{#each MariAdminAppTabContent as { tabName, arialLabel, component, icon }, index}
+{#each MariAdminAppTabContent as tab, index}
 
-	<DaisyUiTabsTab tabName={tabName}  checked={index === 0} />
+	<DaisyUiTabsTab tabName={tab.tabName} ariaLabel={tab.ariaLabel} checked={index === 0} />
 	<DaisyUiTabsContent className="border-base-300 bg-base-100 p-10">
-		<svelte:component this={component} />
+		<svelte:component this={tab.component} />
 	</DaisyUiTabsContent>
 {/each}
